@@ -1,4 +1,5 @@
 local commit = {
+  alpha = "8ad63ffb2888a30019d082f08e0b63b9a96ee77c",
   bufferline = "305d4fd693b6ebcb9ac95cf16c0693ce64960162",
   cmp_buffer = "f83773e2f433a923997c5faad7ea689ec24d1785",
   cmp_luasnip = "d6f837f4e8fe48eeae288e638691b91b97d1737f",
@@ -268,6 +269,7 @@ return {
     config = function()
       require("lvim.core.alpha").setup()
     end,
+    commit = "8ad63ffb2888a30019d082f08e0b63b9a96ee77c",
     disable = not lvim.builtin.alpha.active,
   },
 
