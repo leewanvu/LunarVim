@@ -7,7 +7,6 @@ local commit = {
   cmp_path = "466b6b8270f7ba89abd59f402c73f63c7331ff6e",
   comment = "84648f1d2d1c69b693437c9b0b12e84f526c3671",
   dapinstall = "24923c3819a450a772bb8f675926d530e829665f",
-  dashboard_nvim = "d82ddae95fd4dc4c3b7bbe87f09b1840fbf20ecb",
   fixcursorhold = "0e4e22d21975da60b0fd2d302285b3b603f9f71e",
   friendly_snippets = "2e575549910571ff5abb6b02178c69ad760a4e00",
   gitsigns = "e2b2730254df7648c79794555978f10fceb4b163",
@@ -254,15 +253,6 @@ return {
     disable = not lvim.builtin.dap.active,
   },
 
-  -- Dashboard
-  {
-    "ChristianChiarulli/dashboard-nvim",
-    event = "BufWinEnter",
-    config = function()
-      require("lvim.core.dashboard").setup()
-    end,
-    disable = not lvim.builtin.dashboard.active,
-  },
   -- alpha
   {
     "goolord/alpha-nvim",
